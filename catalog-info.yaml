@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "my-amazing-app"
+  description: "This my awesome test."
+  annotations:
+    github.com/project-slug: hattondev/my-awesome-app
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: "my-amazing-app"
+  links:
+    - url: https://my-amazing-app.apps.wwtlab.net
+      title: Website
+      icon: Website
+    - url: https://app.harness.io/ng/#/account/KDANFuIkSvK5VMJ5Stni7g/cd/orgs/default/projects/PS_10015914/gitops/applications/ad54321-my-amazing-app?agentId=prodcluster
+      title: ArgoCD/Harness
+      icon: cloud
+  tags:
+    - golang
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "tylerhatton"
